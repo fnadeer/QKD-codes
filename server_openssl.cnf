@@ -1,0 +1,22 @@
+#
+# server_openssl.cnf
+#
+# The OpenSSL configuration file used when running the OpenSSL demonstration server; it loads the
+# QKD server engine.
+# 
+# (c) 2019 Bruno Rijsman, All Rights Reserved.
+# See LICENSE for licensing information.
+#
+
+openssl_conf = openssl_def
+
+[openssl_def]
+engines = engine_section
+
+[engine_section]
+qkd_engine_server = qkd_engine_server_section
+
+[qkd_engine_server_section]
+engine_id = qkd_engine_server
+default_algorithms = ALL
+init = 0

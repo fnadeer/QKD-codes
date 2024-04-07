@@ -46,6 +46,7 @@ run_client() {
         >> client.out 2>&1
 }
 
+# Function to run the client is ended here 
 # Main entry point
 main() {
     # Set platform-dependent variables
